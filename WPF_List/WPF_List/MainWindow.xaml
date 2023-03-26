@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF_List.MainWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CircularLinkedListDemo" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="LinkedListBox" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="400">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="addButton" Content="Add Item" HorizontalAlignment="Left" Margin="430,10,0,0" VerticalAlignment="Top" Width="100" Click="AddButton_Click" />
+        <TextBox x:Name="addItemTextBox" HorizontalAlignment="Left" Height="25" Margin="550,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="removeButton" Content="Remove Item" HorizontalAlignment="Left" Margin="430,45,0,0" VerticalAlignment="Top" Width="100" Click="RemoveButton_Click" />
+        <TextBox x:Name="removeItemTextBox" HorizontalAlignment="Left" Height="25" Margin="550,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="swapButton" Content="Swap Elements" HorizontalAlignment="Left" Margin="430,80,0,0" VerticalAlignment="Top" Width="100" Click="SwapButton_Click" />
+        <TextBox x:Name="firstValueTextBox" HorizontalAlignment="Left" Height="25" Margin="550,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="secondValueTextBox" HorizontalAlignment="Left" Height="25" Margin="650,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="addBeforeButton" Content="Add Before" HorizontalAlignment="Left" Margin="430,115,0,0" VerticalAlignment="Top" Width="100" Click="AddBeforeButton_Click" />
+        <TextBox x:Name="valueTextBox" HorizontalAlignment="Left" Height="25" Margin="550,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="newValueTextBox" HorizontalAlignment="Left" Height="25" Margin="650,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="clearButton" Content="Clear List" HorizontalAlignment="Left" Margin="430,150,0,0" VerticalAlignment="Top" Width="100" Click="ClearButton_Click" />
+    </Grid>
+</Window>
+
+
+
+
